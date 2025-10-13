@@ -1,0 +1,33 @@
+.logo{
+  width: 156px;
+  height: 60px;
+}
+.header{
+  background: #69F0AE;
+  font-size: 64px;
+}
+.search{
+    position: relative;
+    float: left;
+    border: 1px solid var(--neutral-300);
+    border-radius: 40px;
+    justify-content: center;
+}
+.search-bar{
+    border-radius: 40px;
+    border: 1px solid white;
+}
+.search-btn{
+    border: 1px solid transparent;
+    border-radius: 30px;
+    white-space: nowrap; /* 不換行 */
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 8px;
+    background-color: var(--primary-500);
+    color: var(--neutral-0);
+}
+.search-btn:hover{
+  color: var(--primary-700);
+}
