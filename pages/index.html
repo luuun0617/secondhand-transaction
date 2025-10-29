@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +12,373 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">  
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-md-item active">
+          <nav class="index-header index-md-header d-flex">
+              <h1 class="display-heading display-md-heading text-primary-800">經典不退燒，</h1>
+              <h2 class="display-heading display-md-heading text-neutral-0">質感再上架</h2>
+          </nav>
+          <a href="#" class="btn btn-product btn-md-product">立即選購</a>
+          <img src="/assets/images/banner.png" class="d-block header-md-img" alt="banner">
+        </div>
+        <div class="carousel-item carousel-md-item">
+          <img src="/assets/images/banner.png" class="d-block header-md-img" alt="banner">
+        </div>
+        <div class="carousel-item carousel-md-item">
+          <img src="/assets/images/banner.png" class="d-block header-md-img" alt="banner">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon carousel-control-prev-icon-md" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon carousel-control-next-icon-md" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="d-flex justify-center my-12">
+        <div class="icon-line icon-md-line me-8"></div>
+        <nav class="icon-dot me-8"></nav>
+        <nav class="icon-dot me-8"></nav>
+        <nav class="icon-dot me-8"></nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="my-80 my-md-40 text-center">
+        <div class="mb-40 mb-md-30">
+          <h3 class="h1 h3-md mb-20 text-primary-800">老物經典出清週</h3>
+          <div class="d-flex justify-center">
+            <nav class="bar-y"></nav>
+            <nav class="bar-0"></nav>
+          </div>
+        </div>
+        <div class="row row-select-md overflow-x-md-auto flex-md-nowrap text-md-start m-md-0 pt-md-10">
+          <div class="sold-col">
+            <div class="card-border">
+              <div class="card shadow bg-body">
+                <span class="card-img"><img src="/assets/images/pic-1.jpg" class="card-img-top-pic1 img-fluid" alt="pic-1"></span>
+                <nav class="card-tag h6 text-neutral-0">復古選品</nav>
+                <div class="heart">
+                  <input type="checkbox" id="heart-toggle-1" hidden>
+                  <label for="heart-toggle-1" class="btn-luv icon-luv shadow">
+                    <span class="material-icons">favorite</span>
+                  </label>
+                </div>
+                <div class="card-body text-start shadow bg-body">
+                  <p class="h5 text-neutral-black mb-16">復古球鞋（9成）</p>
+                    <div class="d-flex justify-between">
+                      <p class="h6 text-primary-500 m-0">NT$ 3,800</p>
+                      <a class="nav-link-shop text-primary-500" href="#"><span class="material-icons">shopping_cart</span></a>
+                    </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="sold-col">
+            <div class="card-border">
+              <div class="card shadow bg-body">
+                <span class="card-img"><img src="/assets/images/pic-2.jpg" class="card-img-top img-fluid" alt="pic-2"></span>
+                <nav class="card-tag h6 text-neutral-0">復古選品</nav>
+                <div class="heart">
+                  <input type="checkbox" id="heart-toggle-2" hidden>
+                  <label for="heart-toggle-2" class="btn-luv icon-luv shadow">
+                    <span class="material-icons">favorite</span>
+                  </label>
+                </div>
+                <div class="card-body text-start shadow bg-body">
+                  <p class="h5 text-neutral-black mb-16">初版漫畫合冊</p>
+                  <div class="d-flex justify-between">
+                    <p class="h6 text-primary-500 m-0">NT$ 260</p>
+                    <a class="nav-link-shop text-primary-500" href="#"><span class="material-icons">shopping_cart</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sold-col">
+            <div class="card-border">
+              <div class="card shadow bg-body">
+                <span class="card-img"><img src="/assets/images/pic-3.jpg" class="card-img-top img-fluid" alt="pic-3"></span>
+                <nav class="card-tag h6 text-neutral-0">復古選品</nav>
+                <div class="heart">
+                  <input type="checkbox" id="heart-toggle-3" hidden>
+                  <label for="heart-toggle-3" class="btn-luv icon-luv shadow">
+                    <span class="material-icons">favorite</span>
+                  </label>
+                </div>
+                <div class="card-body text-start shadow bg-body">
+                  <p class="h5 text-neutral-black mb-16">黑膠唱片精選</p>
+                  <div class="d-flex justify-between">
+                    <p class="h6 text-primary-500 m-0">NT$ 800</p>
+                    <a class="nav-link-shop text-primary-500" href="#"><span class="material-icons">shopping_cart</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sold-col">
+            <div class="card-border">
+              <div class="card shadow bg-body">
+                <span class="card-img"><img src="/assets/images/pic-4.jpg" class="card-img-top img-fluid" alt="pic-4"></span>
+                <nav class="card-tag h6 text-neutral-0">復古選品</nav>
+                <div class="heart">
+                  <input type="checkbox" id="heart-toggle-4" hidden>
+                  <label for="heart-toggle-4" class="btn-luv icon-luv shadow">
+                    <span class="material-icons">favorite</span>
+                  </label>
+                </div>
+                <div class="card-body text-start shadow bg-body">
+                  <p class="h5 text-neutral-black mb-16">限量潮牌帽Ｔ</p>
+                  <div class="d-flex justify-between">
+                    <p class="h6 text-primary-500 m-0">NT$ 800</p>
+                    <a class="nav-link-shop text-primary-500" href="#"><span class="material-icons">shopping_cart</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn mt-40 mt-md-16 text-neutral-0 text-md-center text-sm-center">選購去</a>
+      </div>
+    </div>
+    <!--選品系列-->
+    <div class="select-bg select-md-bg">
+      <div class="triangle-bg-top triangle-bg-md-top"></div>
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">選品系列</h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+              <div class="me-md-24 m-select-sm-0">
+                <div class="d-flex flex-column flex-md-row">
+                  <div class="img-box-4 img-box-md-4 me-16 mb-md-16">
+                    <img src="/assets/images/pic-5.jpg" alt="pic-5" class="select-img-4">
+                  </div>
+                  <div class="img-flex-md mb-md-8">
+                    <div class="img-box img-box-md-2 mb-16 me-md-16">
+                      <img src="/assets/images/pic-6.jpg" alt="pic-6" class="select-img select-md-img">
+                    </div>
+                    <div class="img-box img-box-md-2 mb-16 me-md-16">
+                      <img src="/assets/images/pic-7.jpg" alt="pic-7" class="select-img select-md-img-2">
+                    </div>
+                    <div class="img-box img-box-md-2">
+                      <img src="/assets/images/pic-8.jpg" alt="pic-8" class="select-img select-md-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="select-col-6 select-col-md-4">
+                <img src="/assets/images/lighting.png" alt="lighting" class="mb-20">
+                <p class="h3 h4-md text-secondary-700 mb-20">經典不退場</p>
+                <p class="fs-6 text-neutral-black justify-center mb-20">翻開 90 年代原版漫畫，封面褪色卻依然帥氣。<br>復古球鞋上的痕跡，是某段故事的註腳。<br>每一件物件都活過一段時光，如今將被你繼續帶著走。</p>
+                <a href="#" class="btn text-neutral-0">看更多新品</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <img src="/assets/images/line-orange.png" alt="line-orange" class="line-orange line-md-orange">
+      <div class="cloth-box d-none d-lg-block">
+        <img src="/assets/images/cloth.png" alt="cloth" class="cloth-img">
+      </div>
+      <div class="triangle-bg-bottom triangle-bg-md-bottom"></div>
+    </div>
+    <!--收藏系列--> 
+    <div class="collect-bg collect-md-bg">
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">收藏系列</h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+              <div class="select-col-6 select-col-md-4 d-none d-sm-block">
+                <img src="/assets/images/lighting.png" alt="lighting" class="mb-20">
+                <p class="h3 text-secondary-700 mb-20">再一次,發光</p>
+                <p class="fs-6 text-neutral-black justify-center mb-20">限量畫冊、初版黑膠唱片，在書桌一隅散發歲月的味道。<br>你不是擁有它，而是與它一起讓記憶繼續流動。<br>二手不是舊，是被挑選後再次珍惜的選擇。</p>
+                <a href="#" class="btn text-neutral-0">看更多新品</a>
+              </div>
+              <div class="d-flex flex-column flex-md-row">
+                <div class="me-md-24 m-select-sm-0">
+                  <div class="d-flex flex-column flex-md-row">
+                    <div class="img-box-4 img-box-md-4 me-16 mb-md-16">
+                      <img src="/assets/images/pic-9.jpg" alt="pic-9" class="select-img">
+                    </div>
+                    <div class="img-flex-md mb-md-8">
+                      <div class="img-box img-box-md-2 mb-16 me-md-16">
+                        <img src="/assets/images/pic-10.jpg" alt="pic-10" class="select-img select-md-img">
+                      </div>
+                      <div class="img-box img-box-md-2 mb-16 me-md-16">
+                        <img src="/assets/images/pic-11.jpg" alt="pic-11" class="select-img select-md-img-2">
+                      </div>
+                      <div class="img-box img-box-md-2">
+                        <img src="/assets/images/pic-12.png" alt="pic-12" class="select-img select-md-img">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="select-col-6 select-col-md-4 d-block d-sm-none">
+                <img src="/assets/images/lighting.png" alt="lighting" class="mb-20">
+                <p class="h3 h4-md text-secondary-700 mb-20">再一次,發光</p>
+                <p class="fs-6 text-neutral-black justify-center mb-20">限量畫冊、初版黑膠唱片，在書桌一隅散發歲月的味道。<br>你不是擁有它，而是與它一起讓記憶繼續流動。<br>二手不是舊，是被挑選後再次珍惜的選擇。</p>
+                <a href="#" class="btn text-neutral-0">看更多新品</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <!--老物系列-->
+    <div class="pick-bg pick-md-bg">
+      <div class="triangle-white-top triangle-white-md-top"></div>
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">讓老物，在發光</h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
+            </div>
+            <div class="old-row row-select-md overflow-x-md-auto flex-md-nowrap">  
+              <div class="col-3 old-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-13.png" class="card-img-top-pic1 img-fluid" alt="pic-1"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">潮流古著策展人</p>
+                      <p class="fs-7 text-primary-600 m-0">潮流收藏顧問
+                      <p class="fs-6 text-primary-600 mb-16">Kenji Yamamoto</p>
+                      <P class="fs-6 text-neutral-black m-0">任職於 BEAMS BUY&SELL 超過八年，策劃多場主題快閃活動，專精潮鞋、徽章、海報等二手文化選品，將收藏價值與風格美學融為一體。</P>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 old-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-14.jpg" class="card-img-top-pic1 img-fluid" alt="pic-14"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">時尚循環倡議者</p>
+                      <p class="fs-7 text-primary-600 m-0">永續時尚造型師</p>
+                      <p class="fs-6 text-primary-600 mb-16">Lucía Gómez</p>
+                      <P class="fs-6 text-neutral-black m-0 pick-card-p02">西班牙自由造型師，作品刊登於《Vogue España》，致力於推動「衣再設計」理念。曾與 Humana、Re-Edition 合作重製系列，重塑二手時尚的再生美學</P>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 old-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-15.png" class="card-img-top-pic1 img-fluid" alt="pic-15"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">復古影音修復職人</p>
+                      <p class="fs-7 text-primary-600 m-0">黑膠與老畫冊修復職人</p>
+                      <p class="fs-6 text-primary-600 mb-16">Rachel Fong</p>
+                      <P class="fs-6 text-neutral-black m-0">於英國 V&A 博物館修復部研習，擅長保存黑膠、初版漫畫與藝術畫冊，現於台北開設個人修復工作室，服務藏家與藝廊機構。</P>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 old-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-16.jpg" class="card-img-top-pic1 img-fluid" alt="pic-16"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">潮流古著策展人</p>
+                      <p class="fs-7 text-primary-600 m-0">影音器材維修技師</p>
+                      <p class="fs-6 text-primary-600 mb-16">Po-Hsun Su</p>
+                      <P class="fs-6 text-neutral-black m-0">創立「SoundAgain」翻新工作室，專修老式隨身聽、錄音機與底片相機。以精修與保留外觀聞名，受到潮流玩家與設計師青睞。</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <img src="/assets/images/line-gold.png" alt="line-gold" class="line-orange line-md-orange">
+      <div class="triangle-white-bottom"></div>
+      <div class="bag-box d-none d-lg-block">
+        <img src="/assets/images/bag.png" alt="bag" class="bag-img">
+      </div>
+    </div>
+    <!--循環系列-->  
+    <div class="cycle-bg">
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">循環不是妥協，而是風格 </h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
+            </div>
+            <div class="old-row row-select-md overflow-x-md-auto flex-md-nowrap">  
+              <div class="col-3 cycle-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-17.png" class="card-img-top-pic1 img-fluid" alt="pic-17"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">老物新生！用復古球鞋打造展示牆</p>
+                      <p class="fs-7 text-neutral-600 mb-16">2024/09/01</p>
+                      <P class="fs-6 text-primary-700 mb-16">運用懸掛層架與 LED 軌道燈，將限量球鞋一雙雙陳列於牆面，不僅節省空間，也成為客廳的潮流風景。再加幾幅手繪漫畫初版，整體視覺瞬間升級。</P>
+                      <a href="#" class="btn text-neutral-0 float-end">立刻閱讀</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 cycle-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-18.png" class="card-img-top-pic1 img-fluid" alt="pic-18"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">【收藏即裝飾】二手黑膠唱片的收納提案</p>
+                      <p class="fs-7 text-neutral-600 mb-16">2024/09/01</p>
+                      <P class="fs-6 text-primary-700 mb-16" style="height: 96px;">用木框裝裱最愛的唱片封面，或擺上旋轉唱盤與金屬收納架，讓黑膠不只是收藏，也能成為客廳一隅的文藝主視覺。</P>
+                      <a href="#" class="btn text-neutral-0 float-end">立刻閱讀</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 cycle-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-19.png" class="card-img-top-pic1 img-fluid" alt="pic-19"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">書房風格提案：設計畫冊與徽章也能變空間主角</p>
+                      <p class="fs-7 text-neutral-600 mb-16">2024/09/01</p>
+                      <P class="fs-6 text-primary-700 mb-16">將限量畫冊排列於淺木色層架，加上幾個鐵盒收納徽章與設計玩具，結合黃銅燈具與深色皮椅，創造出帶點復古味的創作者書房風格。</P>
+                      <a href="#" class="btn text-neutral-0 float-end">立刻閱讀</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-3 cycle-col-md-4">
+                <div class="card-border">
+                  <div class="card shadow bg-body">
+                    <span class="card-img"><img src="/assets/images/pic-20.png" class="card-img-top-pic1 img-fluid" alt="pic-20"></span>
+                    <div class="card-body text-start shadow bg-body">
+                      <p class="h5 text-neutral-black mb-16">【潮流收藏展示術】二手服飾與配件的生活美學</p>
+                      <p class="fs-7 text-neutral-600 mb-16">2024/09/01</p>
+                      <P class="fs-6 text-primary-700 mb-16 pick-card-p02">將精選的二手潮牌服飾與限量配件巧妙陳列於開放式衣架和收納架，搭配復古風格裝飾品和藝術擺件，讓收藏不僅是穿著，更是生活空間中的藝術展現。透過細膩搭配，打造個性十足的專屬風格角落。</P>
+                      <a href="#" class="btn text-neutral-0 float-end">立刻閱讀</a>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    
+    
 
     <%- include('./layout/footer'); -%>
 

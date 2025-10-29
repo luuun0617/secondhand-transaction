@@ -1,6 +1,21 @@
-.logo{
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: center !important; /* 水平置中 */
+  align-items: center;     /* 垂直置中 */
+  padding: 0;
+  margin-left: 0 auto;
+  margin-right: auto;
+}
+.img-logo{
   width: 156px;
   height: 60px;
+}
+@media(max-width:767px){
+  .img-logo{ 
+    width: 104px;
+    height: 40px;
+}
 }
 .header{
   background: #69F0AE;
@@ -14,8 +29,7 @@
     justify-content: center;
 }
 .search-bar{
-    border-radius: 40px;
-    border: 1px solid white;
+    border: none;
 }
 .search-btn{
     border: 1px solid transparent;
@@ -30,4 +44,19 @@
 }
 .search-btn:hover{
   color: var(--primary-700);
+}
+.tag{
+  background-color: var(--primary-50);
+  padding: 12px 0px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.header-title {
+  padding: 0 !important;
+}
+.offcanvas-body{
+  padding: 0px 12px;
+}
+.offcanvas-header{
+  padding: 8px 12px 8px 12px;
 }

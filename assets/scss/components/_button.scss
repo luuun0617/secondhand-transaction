@@ -4,3 +4,29 @@
     border-radius: 20px;
     padding: 8px 20px !important;
 }
+.btn{
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-500);
+}
+.btn-dark{
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+.btn-light{
+    border: 1px solid var(--neutral-900);
+}
+.btn-primary{
+    background-color: var(--primary-300);
+}
+.btn-luv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--neutral-600);
+}
