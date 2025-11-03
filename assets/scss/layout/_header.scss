@@ -60,3 +60,23 @@
 .offcanvas-header{
   padding: 8px 12px 8px 12px;
 }
+/* 預設只顯示第一層 */
+#product-menu {
+  display: none;
+}
+
+/* 初始狀態：第二層隱藏 */
+#product-menu {
+  display: none;
+}
+
+/* 第二層被 target 時顯示 */
+#product-menu:target {
+  display: block;
+}
+
+/* 第二層被 target 時隱藏第一層 */
+#product-menu:target ~ #menu-level-1 {
+  display: none;
+}
+

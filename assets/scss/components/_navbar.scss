@@ -13,3 +13,17 @@
 .nav-link:hover{
     color: var(--primary-700);
 }
+.nav-item:hover{
+    color: var(--primary-700);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-700);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+.nav-item:active{
+    color: var(--primary-700);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-700);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}

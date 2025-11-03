@@ -1,0 +1,150 @@
+p{
+    margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.header-story{
+    background-image: url(/assets/images/story-banner.png);
+    background-size: cover;        /* 讓背景隨螢幕放大縮小 */
+    background-position: center;   /* 水平 垂直 都置中 */
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 100%;
+}
+.story-list{
+    background-color: var(--primary-300);
+    padding: 16px 40px;
+    border-radius: 16px;
+    width: 816px;
+    text-align: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story-list-p{
+    margin: 0px 24px 0px 0px;
+}
+.concept-item{
+    border-left: 3.5px solid var(--secondary-700);
+    padding-left: 10px;
+}
+@media(max-width:767px){
+    .header-story{
+        padding-top: 16px;
+        padding-bottom: 26px;
+        max-width: 100%;
+    }
+    .story-list{
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 351px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-list-p{
+        margin: 0px 20px 0px 0px;
+    }
+    .concept-item{
+        width: 208px;
+    }
+    .line-yellow{
+        width: 351px;
+        height: 8px;
+    }
+}
+.magnifier-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: calc(0% + 400px);
+    left: calc(50% + 551px);
+}
+.history-bg{
+    position: relative;
+}
+.story-bg{
+    background-color: var(--primary-50);
+    position: relative;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 1;
+}
+.story-img {
+  width: 526px;
+  height: 468px;
+  border-radius: 16px;
+  overflow: hidden;      /* 隱藏超出部分 */
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* 讓圖片置中 */
+}
+.box-img{
+  position: absolute;
+  width: 253px;
+  top: 0;
+  right: 0;
+  top: calc(100% - 70px);
+  right: calc(50% + 665px);
+  overflow: hidden;
+}
+@media(max-width:767px){
+    .story-bg{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .story-img {
+        width: 351px;
+        height: 312px;
+    }
+    .story-col-md-4{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: calc(100%);
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.card-social{
+  width: 100%;  /* 貼齊外框 */
+  background-color: var(--primary-50);
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: none;
+}
+.card-social-img{
+  width: 588px;
+  height: 397.18px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center;     /* 垂直置中 */
+  border-radius: 16px
+}
+.card-social-body{
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 588px;
+}
+@media(max-width:767px){
+    .card-social{
+    width: 100%;  /* 貼齊外框 */
+    padding: 24px;
+    box-sizing: border-box;
+    }
+    .card-social-img{
+        width: 303px;
+        height: 204.7px;
+    }
+    .card-social-body{
+        width: 303px;
+    }
+}

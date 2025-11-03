@@ -8,64 +8,136 @@
     <title>about</title>
   </head>
   <body>
-    <header class="header">
-        <h1 class="h1 h3-md text-white">
-            品牌故事
-            <br><span class="title">Brand Story</span>
-        </h1>
-    </header>
-
-    <main class="container py-64 py-md-32">
-        <div class="row justify-center">
-            <div class="col-8 col-md-4">
-                <div class="bg-primary-100 p-32 p-md-24 mb-48 mb-md-32 quote">
-                    <h2 class="h5 text-primary-400  mb-12">走出城市的節奏，穿上自己的步調。</h2>
-                    <p class="mb-4">我們相信，每一雙鞋都該帶著個性出場。</p>
-                    <p class="mb-4">在 UR BN STEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。</p>
-                    <p>融合城市結構與機能語彙，我們打造適合都會節奏的風格鞋款，陪你自信穿梭每一場風景。</p>
-                </div>
-            </div>
+    
+    <%- include('./layout/header'); -%>
+    
+    <header class="header-story text-center d-none d-md-block">
+        <h1 class="h1 h3-md text-primary-800 mb-24">關於循環選務</h1>
+        <div class="d-flex justify-center">
+            <a href="index.html" class="fs-6 text-neutral-500">首頁</a>
+            <span class="material-icons text-neutral-500">keyboard_double_arrow_right</span>
+            <p class="fs-6 text-neutral-black">關於循環選務</p>
         </div>
-        <div class="row justify-center">
-            <div class="col-10 col-md-4">
-                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/about.png?raw=true" alt="品牌簡介" class="mb-24 mb-md-16">
+    </header>
+    <header class="header-story text-center d-block d-sm-none">
+        <h1 class="h1 h3-md text-primary-800 mb-24 mb-md-16">產品分類</h1>
+        <div class="d-flex justify-center">
+            <p class="fs-6 text-neutral-500">...</p>
+            <span class="material-icons text-neutral-500">keyboard_double_arrow_right</span>
+            <p class="fs-6 text-neutral-500">限時搶購</p>
+            <span class="material-icons text-neutral-500">keyboard_double_arrow_right</span>
+            <p class="fs-6 text-neutral-black">潮流再生·全面85折</p>
+        </div>
+    </header>
+    <!--品牌年表-->
+    <div class="container history-bg">
+      <div class="my-80 my-md-40 text-center">
+        <div class="mb-40 mb-md-30">
+          <h2 class="h1 h3-md mb-20 text-primary-800">品牌年表</h2>
+          <div class="d-flex justify-center">
+            <nav class="bar-y"></nav>
+            <nav class="bar-0"></nav>
+          </div>
+        </div>
+        <div>
+            <ul>
+                <li class="d-flex story-list mb-16">
+                    <p class="h5 text-primary-700 story-list-p">2004 年</p>
+                    <p class="concept-item fs-6 text-neutral-800">在台北松山，第一家 循環選物開幕。</p>
+                </li>
+                <li class="d-flex story-list mb-16">
+                    <p class="h5 text-primary-700 story-list-p">2008 年</p>
+                    <p class="concept-item fs-6 text-neutral-800">首度展出復古球鞋與限量潮物。</p>
+                </li>
+                <li class="d-flex story-list mb-16">
+                    <p class="h5 text-primary-700 story-list-p">2010 年</p>
+                    <p class="concept-item fs-6 text-neutral-800">循環選物線上購物網開始營運。</p>
+                </li>
+                <li class="d-flex story-list mb-16">
+                    <p class="h5 text-primary-700 story-list-p">2018 年</p>
+                    <p class="concept-item fs-6 text-neutral-800">入選「設計浪潮 × 循環經濟」選品平台年度推薦品牌。</p>
+                </li>
+                <li class="d-flex story-list mb-16">
+                    <p class="h5 text-primary-700 story-list-p">2024 年</p>
+                    <p class="concept-item fs-6 text-neutral-800">入選「設計浪潮 × 循環經濟」選品平台年度推薦品牌。</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <img src="/assets/images/line-yellow.png" alt="line-yellow" class="mt-16 mt-md-6 line-yellow">
+      <div class="d-none d-lg-block">
+        <img src="/assets/images/magnifier.png" alt="magnifier" class="magnifier-img d-none d-lg-block">
+      </div>
+    </div>
+    <!--品牌故事-->   
+    <div class="story-bg">
+      <div class="triangle-bg-top triangle-bg-md-top"></div>
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">品牌故事</h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
             </div>
-        </div>     
-        <div class="row justify-center">
-            <div class="col-8 col-md-4">
-                <div class="pb-48 pb-md-32 mb-48 mb-md-32 section-lined">
-                    <h3 class="h4 h5-md mb-24 mb-md-16">品牌簡介</h3>
-                    <p class="h5 h6-md text-primary-400 mb-16 mb-md-12">UR BN STEP 是來自台灣的街頭機能鞋品牌，致力於打造「風格與功能並存」的鞋履體驗。</p>
-                    <p class="p1 mb-16 mb-md-12">在城市與日常的交錯中，我們看見了步伐的力量。UR BN STEP 誕生於一群設計師與文化觀察者的交會點——一個相信風格應該來自「真實場景」而非伸展台的團隊。從都市的清晨街角，到午後光影灑落的人行道，我們捕捉的是那些不被刻意編排的時刻，那些用一雙鞋踏出的態度與節奏。每一款鞋的誕生，不只是設計與工藝的結晶，更是一段來自城市靈感的延伸，我們相信：鞋，是穿在腳上的語言。</p>
-                    <p>UR BN STEP 的名字來自 Urban + Step，代表著我們對每一個走進城市生活的人致敬。我們不追逐潮流，我們關注輪廓、材質、穿著者的心境與身型，創造能陪伴你走進自我節奏的經典之作。選用高品質麂皮、織物與天然橡膠大底，並與獨立插畫家、攝影師合作，打造具有街頭詩意的形象風格。UR BN STEP 相信，美不是炫耀，而是由內而外的呼吸——一雙鞋，剛好說出你心中的樣子。</p>
+            <div class="d-flex flex-column flex-md-row justify-center">
+              <div class="me-md-24 m-select-sm-0">
+                <div class="d-flex flex-column flex-md-row">
+                  <div class="me-12 mb-md-24">
+                    <img src="/assets/images/pic-21.jpg" alt="pic-21" class="story-img">
+                  </div>
                 </div>
-                <div class="pb-48 pb-md-32 mb-48 mb-md-32 section-lined">
-                    <h4 class="h4 h5-md mb-24 mb-md-16">品牌歷程</h4>
-                    <ul class="history-list">
-                        <li class="mb-12"><span class="pe-8">2019</span><span class="history-desc">UR BN STEP 在台北東區的創意工作室誕生。</span></li>
-                        <li class="mb-12"><span class="pe-8">2021</span><span class="history-desc">首款【Urban Flow 系列】誕生，結合針織鞋面與城市靈感。</span></li>
-                        <li class="mb-12"><span class="pe-8">2025</span><span class="history-desc">UR BN STEP 已成為台灣街頭生活風格的代表鞋履品牌之一。</span></li>
-                    </ul>
-                </div>
-                <div class="pb-48 pb-md-32 mb-48 mb-md-32 section-lined">
-                    <h5 class="h5 h5-md mb-24 mb-md-16">品牌理念</h5>
-                    <ul>
-                        <li class="mb-12 concept-item">機能先行：輕量、透氣、防潑水</li>
-                        <li class="mb-12 concept-item">美學延伸：極簡線條 + 實驗配色</li>
-                        <li class="concept-item">永續材料：選用環保合成皮革與可回收包裝</li>
-                    </ul>
-                </div>
-                <div class="pb-48 pb-md-32 section-lined story">
-                    <h6 class="h4 h5-md mb-24 mb-md-16">品牌小故事</h6>
-                    <a href="#" class="py-8 story-link"><i class="bi bi-arrow-up-right"></i>創辦人筆記：我們為什麼想做鞋？</a>
-                    <a href="#" class="py-8 story-link"><i class="bi bi-arrow-up-right"></i>穿上 UR BN STEP 的他們</a>
-                    <a href="#" class="py-8 story-link"><i class="bi bi-arrow-up-right"></i>UR BN STEP 鞋履的誕生過程</a>
-                </div>
+              </div>
+              <div class="col-5 story-col-md-4 text-start align-center py-69">
+                <p class="h3 h4-md text-secondary-700 mb-40">風格不會過期，好物只等再一次發光</p>
+                <p class="fs-6 text-neutral-black mb-20">循環選物不只是二手平台，而是一個讓設計、潮流與記憶得以延續的舞台。我們相信，每一雙復古球鞋、每一本限量畫冊、每一件舊潮牌服飾，背後都藏著曾經的熱血與風格，它們不應該被遺忘，而值得被再一次珍惜。</p>
+                <p class="fs-6 text-neutral-black mb-20">我們嚴選每一項商品，確保其狀況與價值，也挖掘出它們背後的故事。這不只是購物，更是一場風格的再創造，是一次對過往的致敬與對未來的選擇。</p>
+                <p class="fs-6 text-neutral-black">選擇循環選物，意味著你看得懂細節、願意珍惜、懂得選擇。讓我們一起，讓物件繼續活在光中，讓風格不被浪費。</p>
+              </div>
             </div>
-        </div>       
-    </main>
-
-
+          </div>
+      </section>
+      <img src="/assets/images/line-orange.png" alt="line-orange" class="line-orange line-md-orange">
+      <div class="d-none d-lg-block">
+        <img src="/assets/images/box.png" alt="box-img" class="box-img">
+      </div>
+      <div class="triangle-bg-bottom triangle-bg-md-bottom"></div>
+    </div>
+    <!--社會責任-->
+    <div class="my-80 my-md-40">
+      <section class="text-center">
+          <div class="container">
+            <div class="mb-40">
+              <h3 class="h1 h3-md mb-20 text-primary-800">社會責任</h3>
+              <div class="d-flex justify-center">
+              <nav class="bar-y"></nav>
+              <nav class="bar-0"></nav>
+              </div>
+            </div>
+            <div class="old-row row-select-md overflow-x-md-auto">  
+              <div class="col-6 col-md-4 mb-md-24">
+                <div class="card-social">
+                  <img src="/assets/images/pic-22.jpg" class="card-social-img mb-24" alt="pic-22">
+                  <div class="card-social-body text-start">
+                    <p class="h3 h4-md text-secondary-700 mb-20">讓風格永續,是我們的責任</p>
+                    <p class="fs-6 text-neutral-black">在循環選物，每一件商品的再次流通，都是對資源最真實的珍惜。我們推廣「以賣代丟」、「以換代新」的選物態度，並設立平台認證機制，鼓勵用戶參與商品的維護與轉售。我們相信，品味與永續不衝突，風格可以延續，影響也可以擴大。用選擇支持循環，是一種有型也有意義的消費方式。</p>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="card-social">
+                  <img src="/assets/images/pic-23.png" class="card-social-img mb-24" alt="pic-22">
+                  <div class="card-social-body text-start">
+                    <p class="h3 h4-md text-secondary-700 mb-20">支持創作,回收記憶</p>
+                    <p class="fs-6 text-neutral-black">我們不只關注物件，也關心創作背後的人。循環選物定期與本地藝術家與設計師合作，舉辦「作品再上架」企劃，讓被塵封的創作再次被看見、被收藏。我們也設有「創作回收箱」計畫，回收舊畫冊、手工製品、設計原型樣本，給予新的舞台與價值。因為記憶與美感，不該被遺忘。</p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+      </section>   
+    </div>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
